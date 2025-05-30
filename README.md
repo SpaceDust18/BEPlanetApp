@@ -1,4 +1,4 @@
-# BEPlanetApp
+# BEPlanetApp An app about planets facts/features. It contains two tables, one called planets and the second one called features. Assignment requirements:
 
 Build a Backend Application
 Unit 4
