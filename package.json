@@ -1,0 +1,32 @@
+{
+  "name": "beplanetapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:schema": "psql -d dmv -f db/schema.sql",
+    "db:seed": "node db/seed.js",
+    "db:reset": "npm run db:schema && npm run db:seed",
+    "dev": "node --watch --env-file=.env server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpaceDust18/BEPlanetApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpaceDust18/BEPlanetApp/issues"
+  },
+  "homepage": "https://github.com/SpaceDust18/BEPlanetApp#readme",
+  "devDependencies": {
+    "vitest": "^3.1.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.16.0"
+  }
+}
