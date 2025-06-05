@@ -1,4 +1,4 @@
-# BEPlanetApp An app about planets facts/features. It contains two tables, one called planets and the second one called features. Assignment requirements:
+# BEPlanetApp An app about planets facts/features. It contains three tables; planets, features and users. Assignment requirements:
 
 Build a Backend Application
 Unit 4
@@ -27,4 +27,11 @@ Handle errors in your API and respond with appropriate status codes (ex: send a 
 
 Include meaningful error messages in your responses so clients know what went wrong
 
-Make sure you add in the appropriate middleware and error handling routes to your express server
+Make sure you add in the appropriate middleware and error handling routes to your express server.
+
+PART 2: 
+Hash and compare passwords with bcrypt
+Create and verify JSON web tokens to authenticate requests
+Protect endpoints from unauthorized access
+Route a request through multiple middleware functions
+Reuse logic in shared middleware functions
