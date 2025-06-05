@@ -1,6 +1,7 @@
 import express from "express";
 import planetRoutes from "./api/planets.js";
 import featureRoutes from "./api/features.js";
+import userRoutes from "./api/users.js"
 
 const app = express();
 
@@ -10,6 +11,7 @@ app.use(express.json());
 // Route registration
 app.use("/api/planets", planetRoutes);
 app.use("/api/features", featureRoutes);
+app.use("/api/users", userRoutes);
 
 // Root route
 app.get("/", (req, res) => {

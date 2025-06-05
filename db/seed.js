@@ -4,7 +4,6 @@ console.log("🌱 Seeding database...");
 
 async function seed() {
   try {
-    await db.connect();
 
     await db.query("DELETE FROM features;");
     await db.query("DELETE FROM planets;");
@@ -48,3 +47,4 @@ async function seed() {
 (async () => {
   await seed();
 })();
+

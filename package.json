@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "db:schema": "psql -d beplanetapp -f db/schema.sql"
+    "db:schema": "psql -d beplanetapp -f db/schema.sql",
     "db:seed": "node db/seed.js",
     "db:reset": "npm run db:schema && npm run db:seed",
     "dev": "node --watch --env-file=.env server.js"
@@ -25,8 +25,10 @@
     "vitest": "^3.1.4"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "pg": "^8.16.0"
   }
 }
